@@ -1,0 +1,414 @@
+@font-face {
+    font-family: Sloppy-Hand ;
+    src: url("../font/Sloppy-Hand.otf");
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../img/home4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*********NAVBAR!**************************/
+
+nav {
+  position: fixed;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color:#0D7377;
+}
+
+nav img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+#navul {
+    position: absolute;
+    right: 3%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    color: #14FFEC;
+}
+
+nav a:hover{
+  text-decoration: underline #14FFEC;
+}
+
+nav li {
+    display: inline-flex;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media all and (max-width:650px) {
+    #navul {
+        display: none;
+    }
+    /* Style The Dropdown Button */
+    .dropbtn {
+        background-color: #212121;
+        color: white;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: absolute;
+        top: 0.5%;
+        right: 5%;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0px;
+        background-color: #323232;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #0d7377
+    }
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: white;
+        color: black;
+    }
+}
+
+
+/***********************HOME!********************************/
+
+.accueil {
+    height: 620px;
+    padding: 5%;
+}
+
+
+/*DIV Principale */
+
+#titre {
+    margin-top: 20%;
+    float: right;
+}
+
+
+/*DIV pour h1,h2*/
+
+h1  {
+    font-family: Sloppy-Hand;
+    color: #14FFEC;
+    text-shadow: #0D7377 1px 1px, #0D7377 -1px 1px, #0D7377 -1px -1px, #0D7377 1px -1px;
+    font-size: 12em;
+    text-align: center;
+    margin: 0%;
+}
+
+h2 {
+    font-family: Sloppy-Hand ;
+    color: #0D7377;
+    text-shadow: #14FFEC 1px 1px, #14FFEC -1px 1px, #14FFEC -1px -1px, #14FFEC 1px -1px;
+    font-size: 4em;
+    text-align: right;
+    margin: 0%;
+}
+
+@media all and (max-width:650px){
+    h1 {
+      font-size: 6em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+}
+
+
+/***********************STREAM!********************************/
+
+#stream{
+    padding: 1%;
+    height: 650px;
+    background-color: #212121;
+}
+
+#vid{
+    display: flex;
+}
+
+
+h3 {
+    margin-left: 15%;
+    font-family: Sloppy-Hand;
+    color: #14FFEC;
+    text-shadow: #0D7377 1px 1px, #0D7377 -1px 1px, #0D7377 -1px -1px, #0D7377 1px -1px;
+    font-size: 50px;
+}
+
+video {
+  margin: auto;
+    height: 400px;
+}
+
+#dialogue {
+    display: flex;
+    align-items: flex-end;
+    background-color: #323232;
+    height: 400px;
+    margin: auto;
+}
+
+@media all and (max-width:650px){
+  #stream {
+      display: block;
+      padding: 1%;
+      height: 650px;
+      background-color: #212121;
+  }
+
+  #vid{
+    display: block;
+  }
+
+  video {
+      height: 200px;
+      width: 100%;
+  }
+  #dialogue {
+    height: 300px;
+    justify-content: center;
+  }
+
+}
+
+
+/*************************LA TEAM*******************************************/
+#manette {
+  height: 300px;
+  background-image: url(../img/home1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+#team {
+  padding: 3%;
+  height: 620px;
+  background-color:#212121;
+}
+
+#titreteam {
+    text-align:left;
+}
+
+h4 {
+    margin-left: 15%;
+    font-family: Sloppy-Hand;
+    color: #14FFEC;
+    text-shadow: #0D7377 1px 1px, #0D7377 -1px 1px, #0D7377 -1px -1px, #0D7377 1px -1px;
+    font-size: 50px;
+}
+
+#photo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgteam {
+  background-color:#323232;
+  height: 350px;
+}
+
+.imgteam img {
+  height: 250px;
+}
+
+.imgteam p {
+  color: #0D7377;
+  text-align: center;
+  font-size: 30px;
+}
+
+.imgteam:hover{
+  overflow: hidden;
+}
+
+.imgteam img:hover{
+  height: 350px;
+}
+
+#joindre {
+  margin-top: 2%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+#joindre button {
+  font-family: Sloppy-Hand ;
+  font-size: 30px;
+  width: 35%;
+}
+
+#cacher p {
+  font-family: Sloppy-Hand ;
+  color: #0D7377;
+  text-align: center;
+  font-size: 36px;
+}
+
+#cacher  {
+  padding: 1%;
+  display: none;
+  margin: auto;
+  width: 50%;
+  border: 1px solid #0D7377;
+  color: #0D7377;
+  text-align: center;
+}
+
+#cacher input {
+  margin:0.2%;
+}
+
+@media all and (max-width:650px){
+
+#photo{
+  display: block;
+  padding: 5%;
+  padding-top: 3%;
+}
+#team {
+  padding: 1%;
+  height:100%;
+}
+#joindre button {
+  width: 50%;
+}
+h4 {
+  text-align: center;
+}
+
+#cacher input {
+  width: 80%;
+  margin:0.2%;
+}
+
+
+
+}
+
+/****************************CONTACT !************************************/
+#manette2 {
+  height: 300px;
+  background-image: url(../img/home2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#contact {
+  padding: 1%;
+  height: 650px;
+  background-color:#212121;
+}
+
+#titrecontact {
+  margin-left: 15%;
+}
+
+h5 {
+    font-family: Sloppy-Hand;
+    color: #14FFEC;
+    text-shadow: #0D7377 1px 1px, #0D7377 -1px 1px, #0D7377 -1px -1px, #0D7377 1px -1px;
+    font-size: 50px;
+}
+
+#formulaire {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+
+
+#nom{
+  color:#14FFEC;
+  width: 80%;
+  border:none;
+  border-bottom: 2px solid #14FFEC;
+  background-color: transparent;
+  padding: 3%;
+}
+
+#mail {
+  color:#14FFEC;
+  width: 80%;
+  border:none;
+  border-bottom: 2px solid #14FFEC;
+  background-color: transparent;
+  padding: 3%;
+}
+
+#formulaire textarea{
+  color:#14FFEC;
+  width: 80%;
+  border:none;
+  border-bottom: 2px solid #14FFEC;
+  background-color: transparent;
+  padding: 3%;
+}
+
+#envoyer {
+  margin-top: 2%;
+  color:#14FFEC;
+  border: 2px solid #14FFEC;
+  background-color: transparent;
+}
+
+
+footer {
+  background-color:#0D7377;
+  padding:2%;
+  text-align: center;
+}
